@@ -62,3 +62,18 @@ body {
     }
 }
 
+.chart1 {
+    height: 600px;
+    float:left;
+    width: 800px;
+}
+.chart2 {
+    height: 550px;
+    float:right;
+    width: 400px;
+}
+.chart3 {
+    height: 600px;
+    float:left;
+    width: 800px;
+}

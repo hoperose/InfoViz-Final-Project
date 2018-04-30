@@ -11,7 +11,11 @@
         <!--Import materialize.css-->
         <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
-        
+        <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script
+            src="http://code.jquery.com/jquery-3.3.1.min.js"
+            integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+            crossorigin="anonymous"></script>
     </head>
     
     <body>
@@ -42,17 +46,17 @@
             </div>
         
             
-            <!--add chart_1-->
-            <div class="sum number and change"></div>
-            
-            <!--add chart_2-->
-            <div class="GDP change"></div>
+            <!--add sum number and change-->
+            <script type="text/javascript" src="js/script1.js"></script>
+            <div id="chart-A" class="chart1"></div>
+            <div id="chart-B" class="chart2"></div>
+
             
             <!--add Tableau Geo-distribution-->
             <div class="Studying path"></div>
             
             <!--add D3 chart-->
-            <div class="Study field"></div>
+            <div id="chart-C" class="chart3"></div>
             
             <!--add future trends-->
             <div class="future"></div>
