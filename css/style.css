@@ -101,7 +101,25 @@ body {
     }
 }
 
+<<<<<<< HEAD
 
 #narrative {
     padding-bottom: 150px;
 }
+=======
+.chart1 {
+    height: 600px;
+    float:left;
+    width: 800px;
+}
+.chart2 {
+    height: 550px;
+    float:right;
+    width: 400px;
+}
+.chart3 {
+    height: 600px;
+    float:left;
+    width: 800px;
+}
+>>>>>>> f0d2578919aa612b2586b677788e38bf60bf7d63
