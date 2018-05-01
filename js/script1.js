@@ -14,9 +14,9 @@ var option = {
             type: 'area' // Chart type (i.e. 'bar', 'column', 'spline' etc)
         },
         title: {
-            text: 'Study abroad', // Title for the chart
+            text: 'The Change of Chinese Student Population & the GDP between China and U.S.', // Title for the chart
             style: {
-            color: "#000000",
+            color: "#224062",
             fontFamily: "Helvetica,Arial,sans-serif",
             fontSize: "20px",
             fontWeight: "bold"
@@ -26,7 +26,7 @@ var option = {
             categories: [],
             // Categories for the charts
             plotLines: [{ // mark the weekend
-              color: 'red',
+              color: '#c65e3a',
               width: 2,
               value: 3,
               dashStyle: 'longdashdot',
@@ -42,7 +42,7 @@ var option = {
             min: 0, // Lowest value to show on the yAxis
             title: {
                   style: {
-                    color: "#333333",
+                    color: "#224062",
                     fontFamily: "Helvetica,Arial,sans-serif",
                     fontWeight: "bold"
                  },
@@ -55,7 +55,7 @@ var option = {
             title: {
                 text: 'GDP(10^12)', // Title for the yAxis
                 style: {
-                    color: "#333333",
+                    color: "#224062",
                     fontFamily: "Helvetica,Arial,sans-serif",
                     fontWeight: "bold"
                  },
@@ -67,12 +67,12 @@ var option = {
         legend: {
             enabled: true, // Enable/Disable the legend
             layout: 'vertical',
-            align:'right',
+            align:'left',
             verticalAlign: 'top',
             borderWidth: 0,
             floating: true,
-            x: -40,
-            y: 40
+            x: 65,
+            y: 60
         },
         credits: {
             enabled: true, // Enable/Disable the credits
@@ -109,11 +109,11 @@ var option2 = {
             type: 'line' // Chart type (i.e. 'bar', 'column', 'spline' etc)
         },
         title: {
-            text: 'Study abroad', // Title for the chart
+            text: 'The Change of OPT Got by Chinese Students & Its Percentage of the Total Student Number', // Title for the chart
             style: {
-            color: "#000000",
+            color: "#224062",
             fontFamily: "Helvetica,Arial,sans-serif",
-            fontSize: "20px",
+            fontSize: "15px",
             fontWeight: "bold"
             }
         },
@@ -138,7 +138,7 @@ var option2 = {
             max: 50,
             title: {
                   style: {
-                    color: "#333333",
+                    color: "#224062",
                     fontFamily: "Helvetica,Arial,sans-serif",
                     fontWeight: "bold"
                  },
@@ -150,7 +150,7 @@ var option2 = {
             title: {
                 text: 'Number of OPT', // Title for the yAxis
                 style: {
-                    color: "#333333",
+                    color: "#224062",
                     fontFamily: "Helvetica,Arial,sans-serif",
                     fontWeight: "bold"
                  },
