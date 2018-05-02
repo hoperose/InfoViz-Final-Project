@@ -304,13 +304,13 @@ $(function(){
     svgtext1.attr("x", 400)
            .attr("y", 450)
            .text("The top 5 areas "+ val+" students study at:")
-           .style("fill", "black");
+           .style("fill", "white");
 
     for (var i = 0; i < legenddata[val].length; i++) {
       svgarray[i].attr("x", 400)
            .attr("y", 450+(i+1)*20)
            .text((i+1)+"."+ legenddata[val][i])
-           .style("fill", "black");
+           .style("fill", "white");
     }
 
 

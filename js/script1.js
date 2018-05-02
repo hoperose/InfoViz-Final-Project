@@ -28,10 +28,41 @@ var option = {
             plotLines: [{ // mark the weekend
               color: '#c65e3a',
               width: 2,
+              value: 1,
+              dashStyle: 'longdashdot',
+              label: {
+                text: '2001: China joined WTO', // Content of the label. 
+                align: 'middle', // Positioning of the label. 
+                rotation: 0,
+                //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
+              }
+              },{ // mark the weekend
+              color: '#c65e3a',
+              width: 2,
               value: 3,
               dashStyle: 'longdashdot',
               label: { 
-                text: 'U.S. increase FSA after 911', // Content of the label. 
+                text: '2003: U.S. tighten F1 Visa after 911', // Content of the label. 
+                align: 'left', // Positioning of the label. 
+                rotation: 0
+                //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
+              }},{ // mark the weekend
+              color: '#c65e3a',
+              width: 2,
+              value: 6,
+              dashStyle: 'longdashdot',
+              label: { 
+                text: '2006： U.S. subprime mortgage crisis', // Content of the label. 
+                align: 'left', // Positioning of the label. 
+                rotation: 0
+                //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
+              }},{ // mark the weekend
+              color: '#c65e3a',
+              width: 2,
+              value: 9,
+              dashStyle: 'longdashdot',
+              label: { 
+                text: '2009：U.S.-China Strategic and Economic Dialogue', // Content of the label. 
                 align: 'left', // Positioning of the label. 
                 rotation: 0
                 //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
@@ -53,7 +84,7 @@ var option = {
             min: 0, // Lowest value to show on the yAxis
             max: 60,
             title: {
-                text: 'GDP(10^12)', // Title for the yAxis
+                text: 'GDP(10^12 RMB)', // Title for the yAxis
                 style: {
                     color: "#224062",
                     fontFamily: "Helvetica,Arial,sans-serif",
@@ -121,17 +152,16 @@ var option2 = {
             categories: [],
             // Categories for the charts
             plotLines: [{ // mark the weekend
-              color: 'red',
+              color: '#c65e3a',
               width: 2,
               value: 3,
               dashStyle: 'longdashdot',
-              label: { 
-                text: 'In this year,XXXXXXXXXX', // Content of the label. 
+              label: {
+                text: '2009：U.S.-China Strategic and Economic Dialogue', // Content of the label. 
                 align: 'left', // Positioning of the label. 
                 rotation: 0
                 //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
-              },
-            }]
+              }}]
         },
         yAxis: [{
             min: 0, // Lowest value to show on the yAxis
