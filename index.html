@@ -12,10 +12,42 @@
         <link type="text/css" rel="stylesheet" href="css/materialize.css" media="screen,projection"/>
         <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
         <script src="https://code.highcharts.com/highcharts.js"></script>
+        <script src="//code.jquery.com/jquery-2.0.0.js"></script>
+        <script src="//d3js.org/d3.v4.min.js"></script>
+        <script src="//d3js.org/topojson.v1.min.js"></script>
+        <script src="http://d3js.org/queue.v1.min.js"></script>
+        <script src="js/d3.js"></script>
         <script
             src="http://code.jquery.com/jquery-3.3.1.min.js"
             integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
             crossorigin="anonymous"></script>
+        <style>
+          .countries {
+            fill: #b0d0ab;
+            stroke: #6cb0e0;
+            stroke-width: 0.5px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            vector-effect: non-scaling-stroke;
+          }
+          .airports {
+            fill: #036;
+            stroke: #6cb0e0;
+            stroke-width: 0.5px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            vector-effect: non-scaling-stroke;
+          }
+          .route {
+            fill: none;
+            stroke-width: 1;
+            stroke: #fff;
+          }
+          .plane {
+            fill: #fff;
+            stroke-width: 0;
+          }
+        </style>
     </head>
     
     <body>
@@ -134,7 +166,11 @@
             <!--add D3 chart-->
             <div id="studyingpath">
             <div id="chart-C" class="chart3"></div>
+            <div id="dropdown"></div>
+
+            <div id="map"></div>
             </div>
+
             
             <!--add future trends-->
             <div id="future">
