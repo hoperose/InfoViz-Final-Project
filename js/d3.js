@@ -56,10 +56,10 @@ $(function(){
   //console.log(dropDown.node().value)
 
   var width = 938;
-  var height = 820;
+  var height = 620;
 
-  var projection = d3.geoMercator()
-                         .scale(150)
+  var projection = d3.geoEquirectangular()
+                         .scale(230)
                          .rotate([-180,0])
                          .center([5, 20])
                          .translate([width / 2, height / 2]);
@@ -264,7 +264,7 @@ $(function(){
                  [[112.62589153931525,37.754511779151215], [-122.38347034444935,37.61702508680535]],
                  [[112.62589153931525,37.754511779151215], [-71.43752390918567,42.92791399458855]]],
                  "Shijiazhuang":
-                 [[[114.6922665989016,38.27814091311202], [-73.77813909999998,40.64131109999999]],
+                 [[[114.6922665989016,38.27814091311202], [-73.77813909999998,40.64131109999999 ]],
                  [[114.6922665989016,38.27814091311202], [-118.40246854852198,33.94417425435857]],
                  [[114.6922665989016,38.27814091311202], [-86.29559519999998, 39.7168593]],
                  [[114.6922665989016,38.27814091311202], [-83.00396814177334,42.40909384319068]],
@@ -302,13 +302,13 @@ $(function(){
     var svgarray = [svgtext2, svgtext3, svgtext4, svgtext5, svgtext6]
 
     svgtext1.attr("x", 400)
-           .attr("y", 450)
+           .attr("y", 350)
            .text("The top 5 areas "+ val+" students study at:")
            .style("fill", "white");
 
     for (var i = 0; i < legenddata[val].length; i++) {
       svgarray[i].attr("x", 400)
-           .attr("y", 450+(i+1)*20)
+           .attr("y", 350+(i+1)*20)
            .text((i+1)+"."+ legenddata[val][i])
            .style("fill", "white");
     }
