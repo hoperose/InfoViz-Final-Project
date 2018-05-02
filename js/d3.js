@@ -67,7 +67,10 @@ $(function(){
   var path = d3.geoPath()
                .pointRadius(2)
                .projection(projection);
-
+  var svg = d3.select("#map")
+              .append("svg")
+              .attr("width", width)
+              .attr("height", height);
   //var svg = d3.select("#map")
   //            .append("svg")
   //            .attr("width", width)
@@ -270,10 +273,7 @@ $(function(){
 
 
   function loaded(error, countries, airports) {
-    var svg = d3.select("#map")
-              .append("svg")
-              .attr("width", width)
-              .attr("height", height);
+
 
 
     svg.append("g")
@@ -369,11 +369,12 @@ $(function(){
          .await(loaded);
 
   dropDown.on("change", function(){
-    d3.select("svg").remove();
+    d3.select("#map").selectAll('path').remove();
+    d3.select("#map").selectAll('text').remove();
     val = dropDown.node().value;
     console.log(val);
     queue().defer(d3.json, "data/countries.topo.json")
          .defer(d3.json, "data/airports_rev.topo.json")
          .await(loaded);
-       });
+  });
 })
