@@ -49,9 +49,6 @@ var option = {
                 align: 'left', // Positioning of the label. 
                 rotation: 0
                 //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
-                style: {
-                  fontSize: "10px",
-                }
               }},{ // mark the weekend
               color: '#c65e3a',
               width: 2,
@@ -61,9 +58,6 @@ var option = {
                 text: '2006： U.S. subprime mortgage crisis', // Content of the label. 
                 align: 'left', // Positioning of the label. 
                 rotation: 0
-                style: {
-                  fontSize: "10px",
-                }
                 //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
               }},{ // mark the weekend
               color: '#c65e3a',
@@ -74,9 +68,6 @@ var option = {
                 text: '2009：U.S.-China Strategic and Economic Dialogue', // Content of the label. 
                 align: 'left', // Positioning of the label. 
                 rotation: 0
-                style: {
-                  fontSize: "10px",
-                }
                 //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
               },
             }]
