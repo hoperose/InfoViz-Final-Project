@@ -79,8 +79,8 @@ body {
 
 .material-icons {
     color: white;
-    margin-top: -200px;
-    margin-right: 250px;
+    margin-top: -180px;
+    margin-right: 180px;
     position: relative;
     animation: animateOne 3s linear infinite;
 }
@@ -91,15 +91,15 @@ body {
     }
      40%
     {
-        box-shadow: 0 0 0 25px rgba(255,202,40,0), 0 0 0 0 rgba(255,202,40,.7);
+        box-shadow: 0 0 0 50px rgba(255,202,40,0), 0 0 0 0 rgba(255,202,40,.7);
     }
      80%
     {
-        box-shadow: 0 0 0 25px rgba(255,202,40,0), 0 0 0 10px rgba(255,202,40,0);
+        box-shadow: 0 0 0 50px rgba(255,202,40,0), 0 0 0 10px rgba(255,202,40,0);
     }
      100%
     {
-        box-shadow: 0 0 0 0 rgba(255,202,40,0), 0 0 0 10px rgba(255,202,40,);
+        box-shadow: 0 0 0 25px rgba(255,202,40,0), 0 0 0 10px rgba(255,202,40,);
     }
 }
 
@@ -137,6 +137,12 @@ body {
     padding-left: 10px;
 }
 
+.chart1 {
+    height: 380px;
+    position: relative;
+    width: 1280px;
+}
+
 #chart-B {
     padding-top: 5px;
     padding-left: 100px;
@@ -144,6 +150,13 @@ body {
     float: right;
     margin-bottom: 20px;
 }
+
+.chart2 {
+    height: 350px;
+    position: relative;
+    width: 950px;
+}
+
 
 #sum_1 {
     margin-left: 10px;
@@ -249,6 +262,11 @@ body {
 
 
 
+.states {
+    float: right;
+    position: relative;
+/*    max-height: 1250px;*/
+}
 
 
 
@@ -256,12 +274,12 @@ body {
     padding-top: 15px;
     margin-left: 10px;
     float: left;
-/*    position: absolute;*/
+    position: absolute;
 }
 
 
 .countries {
-            fill: #e7c272;
+            fill: #A69550;
             stroke: #224062;
             stroke-width: 0.5px;
             stroke-linecap: round;
@@ -269,7 +287,9 @@ body {
             vector-effect: non-scaling-stroke;
           }
 .airports {
-            fill: #dd2c00;
+            fill: #E85C0C;
+            stroke: #FF0000;
+            stroke-width: 1px;
             stroke-linecap: round;
             stroke-linejoin: round;
             
@@ -279,7 +299,7 @@ body {
 .route {
             fill: none;
             stroke-width: 1;
-            stroke: #c65e3a;
+            stroke: #CA0CE8;
           }
 .plane {
             fill: #18ffff;
@@ -288,13 +308,12 @@ body {
 
 
 #chart-C {
-    
     padding-bottom: 5px;
-    margin-top: -5px;
+    margin-top: 25px;
     padding-right: 10px;
     padding-left: 10px;
-    position: relative;
 }
+
 
 
 
@@ -312,28 +331,17 @@ body {
 
 
 
-=======
-.chart1 {
-    height: 600px;
-    position: absolute;
-    width: 800px;
-}
-.chart2 {
-    height: 350px;
-    position: relative;
-    width: 950px;
-}
-
-
-
 .row {
     margin-left: 3.5px;
 }
 
+
+
 #future {
-    margin-top: 288px;
+    margin-top: 125px;
     margin-bottom: 200px;
-    padding-top: 50px;
+    padding-top: 5px;
+
 }
 
 
