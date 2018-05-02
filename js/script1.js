@@ -47,7 +47,7 @@ var option = {
               label: { 
                 text: '2003: U.S. tighten F1 Visa after 911', // Content of the label. 
                 align: 'left', // Positioning of the label. 
-                rotation: 0
+                rotation: 0,
                 //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
                 style: {
                   fontSize: "10px",
@@ -60,7 +60,7 @@ var option = {
               label: { 
                 text: '2006： U.S. subprime mortgage crisis', // Content of the label. 
                 align: 'left', // Positioning of the label. 
-                rotation: 0
+                rotation: 0,
                 style: {
                   fontSize: "10px",
                 }
@@ -73,7 +73,7 @@ var option = {
               label: { 
                 text: '2009：U.S.-China Strategic and Economic Dialogue', // Content of the label. 
                 align: 'left', // Positioning of the label. 
-                rotation: 0
+                rotation: 0,
                 style: {
                   fontSize: "10px",
                 }
@@ -171,7 +171,10 @@ var option2 = {
               label: {
                 text: '2009：U.S.-China Strategic and Economic Dialogue', // Content of the label. 
                 align: 'left', // Positioning of the label. 
-                rotation: 0
+                rotation: 0,
+                style: {
+                  fontSize: "10px",
+                }
                 //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
               }}]
         },
