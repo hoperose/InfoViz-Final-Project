@@ -30,7 +30,7 @@ $(function(){
     { value: "Shijiazhuang", text: "Shijiazhuang" },
     { value: "Fuzhou", text: "Fuzhou" }]
 
-  var dropDown = d3.select("#dropdown").append('select').attr('class','select');
+  var dropDown = d3.select("#dropdown").append('select');
   dropDown.selectAll("option")
           .data(dropdown_options)
           .enter()
