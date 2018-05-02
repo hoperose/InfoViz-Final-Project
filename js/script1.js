@@ -31,7 +31,7 @@ var option = {
               value: 3,
               dashStyle: 'longdashdot',
               label: { 
-                text: 'In this year,XXXXXXXXXX', // Content of the label. 
+                text: 'U.S. increase FSA after 911', // Content of the label. 
                 align: 'left', // Positioning of the label. 
                 rotation: 0
                 //Default to center. x: +10 // Amount of pixels the label will be repositioned according to the alignment.
@@ -211,7 +211,7 @@ var option3 = {
         title: {
             text: 'Study abroad', // Title for the chart
             style: {
-            color: "#000000",
+            color: "#224062",
             fontFamily: "Helvetica,Arial,sans-serif",
             fontSize: "20px",
             fontWeight: "bold"

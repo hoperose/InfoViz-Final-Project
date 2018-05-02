@@ -182,25 +182,14 @@ body {
     0% {
         transform: rotate(0deg);
     }
-  /*  25% {
-        transform: rotate(360deg);
-    }
-    50% {
-        transform: translate(-50%,-50%) rotate(0deg);
-    }
-    75% {
-        transform: translate(-50%,-50%) rotate(0deg);
-    }*/
+  
     100% {
         transform: rotate(360deg);
     }
 }
 
 
-/*.studyfield {
-    margin-top: 200px;
-    padding-left: 50px;
-}*/
+
 
 
 
@@ -259,24 +248,67 @@ body {
 }
 
 
-/*.transition_3 #map {
-    position: relative;
-    float: right;
-   
-}*/
 
 
-/*.map {
-    background: #224062 url("images/map.png");
-    position: relative;
-}*/
+
+
+#map {
+    padding-top: 15px;
+    margin-left: 10px;
+    float: left;
+/*    position: absolute;*/
+}
+
+
+.countries {
+            fill: #e7c272;
+            stroke: #224062;
+            stroke-width: 0.5px;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            vector-effect: non-scaling-stroke;
+          }
+.airports {
+            fill: #dd2c00;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            
+            vector-effect: non-scaling-stroke;
+            
+          }
+.route {
+            fill: none;
+            stroke-width: 1;
+            stroke: #c65e3a;
+          }
+.plane {
+            fill: #18ffff;
+            stroke-width: 0;
+          }
+
+
+#chart-C {
     
+    padding-bottom: 5px;
+    margin-top: -5px;
+    padding-right: 10px;
+    padding-left: 10px;
+    position: relative;
+}
+
+
 
 
 #studyingpath {
     margin-top: 85px;
     margin-left: 10px;
+    margin-bottom: 55px;
 }
+
+
+
+
+
 
 
 
@@ -291,10 +323,7 @@ body {
     position: relative;
     width: 950px;
 }
-.chart3 {
-    height: 600px;
-    width: 800px;
-}
+
 
 
 .row {
@@ -304,11 +333,13 @@ body {
 #future {
     margin-top: 288px;
     margin-bottom: 200px;
+    padding-top: 50px;
 }
 
 
 #sub_title {
     font-family: "Georgia";
+    margin-top: 25px;
     padding-bottom: 25px;
     padding-top: 25px;
 }
