@@ -369,7 +369,10 @@ $(function(){
          .await(loaded);
 
   dropDown.on("change", function(){
-    d3.select("#map").selectAll('path').remove();
+    // remove using class
+    d3.select("#map").selectAll('.route').remove();
+    d3.select("#map").selectAll('.plane').remove();
+    // remove using label
     d3.select("#map").selectAll('text').remove();
     val = dropDown.node().value;
     console.log(val);
