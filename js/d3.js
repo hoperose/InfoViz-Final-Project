@@ -302,13 +302,13 @@ $(function(){
     var svgtext6 = svg.append("text");
     var svgarray = [svgtext2, svgtext3, svgtext4, svgtext5, svgtext6]
 
-    svgtext1.attr("x", 400)
+    svgtext1.attr("x", 350)
            .attr("y", 350)
-           .text("The top 5 areas "+ val+" students study at:")
+           .text("The top 5 areas "+ val+" students (2001-2012) study at:")
            .style("fill", "white");
 
     for (var i = 0; i < legenddata[val].length; i++) {
-      svgarray[i].attr("x", 400)
+      svgarray[i].attr("x", 350)
            .attr("y", 350+(i+1)*20)
            .text((i+1)+"."+ legenddata[val][i])
            .style("fill", "white");

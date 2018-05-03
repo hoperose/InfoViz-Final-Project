@@ -484,7 +484,7 @@ $.get("data/city_GDP.csv", function (data) {
 
 
   var series2Data = {
-      name: 'Number of people',
+      name: 'Total Number of students (2001-2012)',
       data: people,
       xAxis: 0
       //stack: year_noduplicate[i]
@@ -495,7 +495,7 @@ $.get("data/city_GDP.csv", function (data) {
 
 
   var series2Data2 = {
-      name: 'GDP',
+      name: 'Average GDP (2008-2012) (10^8 RMB)',
       data: gdp,
       xAxis: 1
 
