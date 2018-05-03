@@ -254,7 +254,7 @@ var option3 = {
             type: 'bar' // Chart type (i.e. 'bar', 'column', 'spline' etc)
         },
         title: {
-            text: 'The GDP of Cities in China & the Number of Students', // Title for the chart
+            text: 'The GDP of Cities in China & the Number of Students (2001 to 2012)', // Title for the chart
             style: {
             color: "#224062",
             fontFamily: "Helvetica,Arial,sans-serif",
