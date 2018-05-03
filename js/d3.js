@@ -2,33 +2,34 @@
 $(function(){
 
   var dropdown_options = [
-    { value: "Shanghai",text: "Shanghai" },
-    { value: "HongKong",text: "HongKong" },
-    { value: "Nanjing", text: "Nanjing" },
-    { value: "Guangzhou", text: "Guangzhou" },
-    { value: "Chengdu", text: "Chengdu" },
-    { value: "Wuhan", text: "Wuhan" },
-    { value: "Shenzhen", text: "Shenzhen" },
-    { value: "Hangzhou", text: "Hangzhou" },
-    { value: "Xi\'an", text: "Xi\'an" },
-    { value: "Shenyang", text: "Shenyang" },
-    { value: "Tianjing", text: "Tianjing" },
-    { value: "Dalian", text: "Dalian" },
-    { value: "Qingdao", text: "Qingdao" },
-    { value: "Chongqing", text: "Chongqing" },
     { value: "Beijing", text: "Beijing" },
-    { value: "Suzhou", text: "Suzhou" },
-    { value: "Jinan", text: "Jinan" },
-    { value: "Changsha", text: "Changsha" },
-    { value: "Zhengzhou", text: "Zhengzhou" },
-    { value: "Hefei", text: "Hefei" },
-    { value: "Ningbo", text: "Ningbo" },
-    { value: "Harbin", text: "Harbin" },
     { value: "Changchun", text: "Changchun" },
-    { value: "Wuxi", text: "Wuxi" },
-    { value: "Taiyuan", text: "Taiyuan" },
+    { value: "Changsha", text: "Changsha" },
+    { value: "Chengdu", text: "Chengdu" },
+    { value: "Chongqing", text: "Chongqing" },
+    { value: "Dalian", text: "Dalian" },
+    { value: "Fuzhou", text: "Fuzhou" },
+    { value: "Guangzhou", text: "Guangzhou" },
+    { value: "Hangzhou", text: "Hangzhou" },
+    { value: "Harbin", text: "Harbin" },
+    { value: "Hefei", text: "Hefei" },
+    { value: "HongKong",text: "Hong Kong" },
+    { value: "Jinan", text: "Jinan" },
+    { value: "Nanjing", text: "Nanjing" },
+    { value: "Ningbo", text: "Ningbo" },
+    { value: "Qingdao", text: "Qingdao" },
+    { value: "Shanghai",text: "Shanghai" },
+    { value: "Shenyang", text: "Shenyang" },
+    { value: "Shenzhen", text: "Shenzhen" },
     { value: "Shijiazhuang", text: "Shijiazhuang" },
-    { value: "Fuzhou", text: "Fuzhou" }]
+    { value: "Suzhou", text: "Suzhou" },
+    { value: "Taiyuan", text: "Taiyuan" },
+    { value: "Tianjing", text: "Tianjing" },
+    { value: "Wuhan", text: "Wuhan" },
+    { value: "Wuxi", text: "Wuxi" },
+    { value: "Xi\'an", text: "Xi\'an" },
+    { value: "Zhengzhou", text: "Zhengzhou" }
+    ]
 
   var dropDown = d3.select("#dropdown").append('select');
   dropDown.selectAll("option")
@@ -301,13 +302,13 @@ $(function(){
     var svgtext6 = svg.append("text");
     var svgarray = [svgtext2, svgtext3, svgtext4, svgtext5, svgtext6]
 
-    svgtext1.attr("x", 400)
+    svgtext1.attr("x", 350)
            .attr("y", 350)
-           .text("The top 5 areas "+ val+" students study at:")
+           .text("The top 5 areas "+ val+" students (2001-2012) study at:")
            .style("fill", "white");
 
     for (var i = 0; i < legenddata[val].length; i++) {
-      svgarray[i].attr("x", 400)
+      svgarray[i].attr("x", 350)
            .attr("y", 350+(i+1)*20)
            .text((i+1)+"."+ legenddata[val][i])
            .style("fill", "white");
