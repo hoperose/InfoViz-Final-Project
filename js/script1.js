@@ -495,7 +495,7 @@ $.get("data/city_GDP.csv", function (data) {
 
 
   var series2Data2 = {
-      name: 'Average GDP (2008-2012) (10^8 RMB)',
+      name: 'Average GDP (2001-2012) (10^8 RMB)',
       data: gdp,
       xAxis: 1
 
