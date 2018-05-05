@@ -152,14 +152,14 @@ body {
 .chart2 {
     height: 350px;
     position: relative;
-    width: 950px;
+    width: 960px;
 }
 
 
 #sum_1 {
     margin-left: 10px;
     padding-top: 22.5px;
-    padding-left: 25px;
+    padding-left: 40px;
     padding-right: -20px;
     padding-bottom: 22.5px;
     margin-top: 5px;
@@ -172,7 +172,7 @@ body {
 
 #sum_2 {
     margin-left: 10px;
-    padding-left: 25px;
+    padding-left: 40px;
     margin-top: 12px;
     margin-right: 875px;
     padding-top: 21.5px;
